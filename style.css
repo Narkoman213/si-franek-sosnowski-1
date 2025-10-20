@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+}
+
+div.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button.nav-item {
+  border-radius: 10px;
+  font-size: 25px;
+}
