@@ -1,14 +1,48 @@
 body {
   background-color: black;
+  margin: 0;
 }
 
-div.nav-list {
+button {
+  background: transparent;
+  color: white;
+  border: none;
+  transition: background-color 600ms ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.495);
+  border: 1px rgb(101, 101, 101) solid;
+  transition: background-color 150ms ease;
+}
+div.grid {
+  display: flex;
+  flex-direction: row;
+}
+
+div.left-bar {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: flex-start;
 }
 
-button.nav-item {
+button.left-bar-item {
   border-radius: 10px;
   font-size: 25px;
+}
+
+button.top-bar-item {
+  font-size: 25px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.post {
+  color: white;
 }
