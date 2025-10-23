@@ -4,7 +4,6 @@ body {
   align-items: center;
   background-color: black;
   margin: 0;
-<<<<<<< HEAD
   font-family: "Inter", "Roboto", sans-serif;
 }
 
@@ -14,19 +13,12 @@ div.grid {
   gap: 50px;
 }
 
-=======
-}
-
->>>>>>> fabdc572ab7be01a71f73c30e9a9fc2881db3e07
 button {
   background: transparent;
   color: white;
   border: none;
   transition: background-color 600ms ease;
-<<<<<<< HEAD
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-=======
->>>>>>> fabdc572ab7be01a71f73c30e9a9fc2881db3e07
 }
 
 button:hover {
@@ -38,10 +30,7 @@ button:hover {
 div.grid {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   justify-content: center;
-=======
->>>>>>> fabdc572ab7be01a71f73c30e9a9fc2881db3e07
 }
 
 div.left-bar {
@@ -49,10 +38,7 @@ div.left-bar {
   flex-direction: column;
   gap: 5px;
   align-items: flex-start;
-<<<<<<< HEAD
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-=======
->>>>>>> fabdc572ab7be01a71f73c30e9a9fc2881db3e07
 }
 
 button.left-bar-item {
