@@ -1,14 +1,72 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
+  margin: 0;
+  font-family: "Inter", "Roboto", sans-serif;
 }
 
-div.nav-list {
+div.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+button {
+  background: transparent;
+  color: white;
+  border: none;
+  transition: background-color 600ms ease;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.495);
+  border: 1px rgb(101, 101, 101) solid;
+  transition: background-color 150ms ease;
+}
+div.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div.left-bar {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: flex-start;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-button.nav-item {
+button.left-bar-item {
   border-radius: 10px;
+  font-size: 30px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+button.top-bar-item {
   font-size: 25px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.post {
+  color: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+p.name {
+  font-weight: bold;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+div.middle {
+  border-inline: 1px solid #2f3336;
 }

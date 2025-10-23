@@ -3,32 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Główna / X</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="grid">
       <nav class="left-bar">
         <div class="div-brand"></div>
-        <div class="nav-list">
-          <button class="nav-item">Główna</button>
-          <button class="nav-item">Przeglądaj</button>
-          <button class="nav-item">Powiadomienia</button>
-          <button class="nav-item">Wiadomości</button>
-          <button class="nav-item">Grok</button>
-          <button class="nav-item">Listy</button>
-          <button class="nav-item">Zakładki</button>
-          <button class="nav-item">Grupy dyskusyjne</button>
-          <button class="nav-item">Premium</button>
-          <button class="nav-item">Profil</button>
-          <button class="nav-item">Więcej</button>
-          <button class="nav-item">Opublikuj wpis</button>
+        <div class="left-bar">
+          <button class="left-bar-item" id="logo"></button>
+          <button class="left-bar-item">Główna</button>
+          <button class="left-bar-item">Przeglądaj</button>
+          <button class="left-bar-item">Powiadomienia</button>
+          <button class="left-bar-item">Wiadomości</button>
+          <button class="left-bar-item">Grok</button>
+          <button class="left-bar-item">Listy</button>
+          <button class="left-bar-item">Zakładki</button>
+          <button class="left-bar-item">Grupy dyskusyjne</button>
+          <button class="left-bar-item">Premium</button>
+          <button class="left-bar-item">Profil</button>
+          <button class="left-bar-item">Więcej</button>
+          <button class="left-bar-item">Opublikuj wpis</button>
         </div>
       </nav>
-      <nav class="top-bar">
-        <button class="top-bar-item">Dla Ciebie</button>
-        <button class="top-bar-item">Obserwujesz</button>
-      </nav>
+      <div class="middle">
+        <nav class="top-bar">
+          <button class="top-bar-item">Dla Ciebie</button>
+          <button class="top-bar-item">Obserwujesz</button>
+        </nav>
+        <div class="tweet">
+          <input type="text" placeholder="Co się dzieje?" />
+        </div>
+        <div class="post">
+          <div>
+            <p class="name">User Name</p>
+            <p>This is the content of the post.</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-bar">
+        <input type="text" class="search" />
+        <div class="premium-add"></div>
+        <div class="trend"></div>
+        <div class="follow-recommendations"></div>
+      </div>
     </div>
   </body>
 </html>
