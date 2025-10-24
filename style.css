@@ -1,10 +1,13 @@
+* {
+  font-family: "chrirp",
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   margin: 0;
-  font-family: "Inter", "Roboto", sans-serif;
 }
 
 div.grid {
@@ -18,7 +21,6 @@ button {
   color: white;
   border: none;
   transition: background-color 600ms ease;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 button:hover {
@@ -38,18 +40,17 @@ div.left-bar {
   flex-direction: column;
   gap: 5px;
   align-items: flex-start;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: ;
 }
 
 button.left-bar-item {
   border-radius: 10px;
-  font-size: 30px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 button.top-bar-item {
   font-size: 25px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 body {
   display: flex;
@@ -59,12 +60,10 @@ body {
 
 div.post {
   color: white;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 p.name {
   font-weight: bold;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 div.middle {
@@ -83,4 +82,11 @@ body {
 
 div.post {
   color: white;
+}
+
+
+button.left-bar-item img {
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
 }
