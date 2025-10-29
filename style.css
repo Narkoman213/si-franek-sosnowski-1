@@ -6,15 +6,19 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* align content to top to avoid vertical centering overflow */
+  align-items: flex-start; 
   background-color: black;
   margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 div.grid {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 25px;
   justify-content: center;
 }
 
@@ -35,15 +39,14 @@ button.left-bar-item:hover {
   transition: background-color 100ms ease-out;
 }
 
-div.left-bar {
+.left-bar {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
   padding-block: 12px;
   align-items: flex-start;
   height: 100vh;
-  box-sizing: border-box;
-}
+  box-sizing: border-box;}
 
 button.left-bar-item {
   padding: 8px 16px;
@@ -71,10 +74,11 @@ button.left-bar-item:first-child {
 
 button.left-bar-item:nth-last-child(2) {
   padding-inline: 50px;
-  padding-block: 15px;
+  padding-block: 12px;
   margin-top: 20px;
   background-color: white;
   color: black;
+  
   font-weight: bold;
 }
 button.left-bar-item:nth-last-child(2):hover {
@@ -121,4 +125,59 @@ button.left-bar-item:last-child .second-image {
 button.left-bar-item:last-child{
   padding-left: 15px;
   padding-right: 0px;
+}
+
+.middle {
+  max-width: 600px;
+}
+
+button.top-bar-item  {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 17px 100px;
+  border: none;
+  transition: background-color 200ms ease;
+}
+
+button.top-bar-item:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+#for-you {
+  font-weight: bold;
+}
+
+#followed {
+  color: grey;
+}
+
+.top-bar {
+  border-bottom: 1px solid #2f3336;
+}
+
+.tweet button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.tweet button img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.tweet input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  }
+
+.right-bar {
+  min-width: 400px;
 }
