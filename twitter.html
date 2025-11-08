@@ -17,43 +17,144 @@
   <body>
     <div class="grid">
       <nav class="left-bar">
-        <div class="left-bar">
-          <button class="left-bar-item" id="logo"><img src="/images/logo.svg"></button>
-          <button class="left-bar-item"><img src="/images/home.svg">Główna</button>
-          <button class="left-bar-item"><img src="/images/search.svg">Przeglądaj</button>
-          <button class="left-bar-item"><img src="/images/notifications.svg">Powiadomienia</button>
-          <button class="left-bar-item"><img src="/images/messages.svg">Wiadomości</button>
-          <button class="left-bar-item"><img src="/images/grok.svg">Grok</button>
-          <button class="left-bar-item"><img src="/images/lists.svg">Listy</button>
-          <button class="left-bar-item"><img src="/images/bookmarks.svg">Zakładki</button>
-          <button class="left-bar-item"><img src="/images/groups.svg">Grupy dyskusyjne</button>
-          <button class="left-bar-item"><img src="/images/logo.svg">Premium</button>
-          <button class="left-bar-item"><img src="/images/profile.svg">Profil</button>
-          <button class="left-bar-item"><img src="/images/more.svg">Więcej</button>
-          <button class="left-bar-item">Opublikuj wpis</button>
-          <button class="left-bar-item"><img src="/images/user.png" class="first-image"><span class="account"><span class="name">User</span><span class="handle">@User</span></span><img src="/images/more-account.svg" class="second-image"></button>
-        </div>
+        <a href="#" class="left-bar-item" id="logo"><img src="/images/logo.svg"></a>
+        <a href="#" class="left-bar-item"><img src="/images/home.svg">Główna</a>
+        <a href="#" class="left-bar-item"><img src="/images/search.svg">Przeglądaj</a>
+        <a href="#" class="left-bar-item"><img src="/images/notifications.svg">Powiadomienia</a>
+        <a href="#" class="left-bar-item"><img src="/images/messages.svg">Wiadomości</a>
+        <a href="#" class="left-bar-item"><img src="/images/grok.svg">Grok</a>
+        <a href="#" class="left-bar-item"><img src="/images/lists.svg">Listy</a>
+        <a href="#" class="left-bar-item"><img src="/images/bookmarks.svg">Zakładki</a>
+        <a href="#" class="left-bar-item"><img src="/images/groups.svg">Grupy dyskusyjne</a>
+        <a href="#" class="left-bar-item"><img src="/images/logo.svg">Premium</a>
+        <a href="#" class="left-bar-item"><img src="/images/profile.svg">Profil</a>
+        <a href="#" class="left-bar-item"><img src="/images/more.svg">Więcej</a>
+        <button class="left-bar-item">Opublikuj wpis</button>
+        <a href="#" class="left-bar-item"><img src="/images/user.png" class="first-image"><span class="account"><span class="name">User</span><span class="user-handle">@User</span></span><img src="/images/more-account.svg" class="second-image"></a>
       </nav>
       <div class="middle">
         <nav class="top-bar">
-          <button class="top-bar-item" id="for-you">Dla Ciebie</button>
-          <button class="top-bar-item" id="followed">Obserwujesz</button>
+          <a href="#" class="top-bar-item" id="for-you">Dla Ciebie</a>
+          <a href="#" class="top-bar-item" id="followed">Obserwujesz</a>
         </nav>
         <div class="tweet">
-          <button><img src="/images/user.png" class="tweet-image" /></button>
+            <a href="#"><img src="/images/user.png" class="tweet-image" /></a>
           <input type="text" placeholder="Co się dzieje?" />
+          <button class="tweet-button">Opublikuj wpis</button>
         </div>
         <div class="post">
-          <div>
-            <p class="name">User Name</p>
-            <span>This is the content of the post.</span>
+          <a href="#"><img src="/images/bartosz-baginski.png" class="tweet-profile" /></a>
+          <div class="post-content">
+            <p class="name">Bartosz Bagiński</p>
+            <p class="handle">@BaginskiBar</p>
+            <span class="tweet-text">4 minuty???<br><br>
+              Co ja, na wsi jestem, czy w mieście? Powinno być co 30 sekund!</span>
+            <img src="/images/metro.png" class="tweet-image" />
+            <div class="tweet-actions">
+              <a href="#" class="action-button">
+                <img src="/images/comment.svg" alt="Comment" />
+                <span class="count">12</span>
+              </a>
+              <a href="#" class="action-button" id="repost-button">
+                <img src="/images/repost.svg" alt="Repost" />
+                <span class="count" id="repost-count">8</span>
+              </a>
+              <a href="#" class="action-button" id="like-button">
+                <img src="/images/like.svg" alt="Like" />
+                <span class="count" id="like-count">43</span>
+              </a>
+              <a href="#" class="action-button">
+                <img src="/images/reach.svg" alt="Reach" />
+                <span class="count">1.2K</span>
+              </a>
+              <a href="#" class="action-button">
+                <img src="/images/bookmarks.svg" alt="Bookmark" />
+              </a>
+              <a href="#" class="action-button">
+                <img src="/images/share.svg" alt="Share" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div class="right-bar">
-        <input type="text" class="search" />
-        <div class="premium-add"></div>
-       <div class="trend"></div> 
-        <div class="follow-recommendations"></div>
+        <div class="search-box">
+          <img src="/images/search.svg" class="search-icon" />
+          <input type="search" placeholder="Szukaj" />
+        </div>
+
+        <div class="premium">
+          <h3>Zasubskrybuj wersję Premium</h3>
+          <p>Kup subskrypcję, aby odblokować nowe funkcje i otrzymywać udział w dochodach (jeśli uzyskasz uprawnienie.)</p>
+          <button>Subskrybuj</button>
+        </div>
+
+        <div class="trends">
+          <h3>Trendy dla Ciebie</h3>
+          <ul>
+            <li><small class="trend-location">Najpopularniejsze w Polsce</small><span>TechniSchools</span><small>12,3 tys. wpisów</small></li>
+            <li><span>KoniecŚwiata</span><small>8,7 tys. wpisów</small></li>
+            <li><span>Żart o Napięciu</span><small>5,1 tys. wpisów</small></li>
+          </ul>
+        </div>
+
+        <div class="follow">
+          <h3>Kogo obserwować</h3>
+          <ul>
+            <li>
+              <img src="/images/user.png" alt="Avatar" />
+              <div class="meta">
+                <span class="name">Jan Kowalski</span>
+                <span class="handle">@janek</span>
+              </div>
+              <button>Obserwuj</button>
+            </li>
+            <li>
+              <img src="/images/user.png" alt="Avatar" />
+              <div class="meta">
+                <span class="name">Anna Nowak</span>
+                <span class="handle">@annan</span>
+              </div>
+              <button>Obserwuj</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+    <script>
+      let isLiked = false;
+      let isReposted = false;
+
+      const likeButton = document.getElementById('like-button');
+      const likeCount = document.getElementById('like-count');
+      const repostButton = document.getElementById('repost-button');
+      const repostCount = document.getElementById('repost-count');
+
+      likeButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        isLiked = !isLiked;
+        
+        if (isLiked) {
+          likeCount.textContent = parseInt(likeCount.textContent) + 1;
+          likeButton.classList.add('liked');
+        } else {
+          likeCount.textContent = parseInt(likeCount.textContent) - 1;
+          likeButton.classList.remove('liked');
+        }
+      });
+
+      repostButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        isReposted = !isReposted;
+        
+        if (isReposted) {
+          repostCount.textContent = parseInt(repostCount.textContent) + 1;
+          repostButton.classList.add('reposted');
+        } else {
+          repostCount.textContent = parseInt(repostCount.textContent) - 1;
+          repostButton.classList.remove('reposted');
+        }
+      });
+    </script>
+  </body>
+</html>
