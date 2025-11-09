@@ -306,6 +306,11 @@ button.tweet-button {
   margin-block: 0;
   border-radius: 50%;
   transition: background-color 200ms ease;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
 }
 
 .tweet-actions .action-button:hover {
@@ -325,6 +330,7 @@ button.tweet-button {
 
 .tweet-actions .action-button.liked img {
   opacity: 1;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(3456%) hue-rotate(326deg) brightness(100%) contrast(95%);
 }
 
 .tweet-actions .action-button.liked .count {
@@ -333,6 +339,7 @@ button.tweet-button {
 
 .tweet-actions .action-button.reposted img {
   opacity: 1;
+  filter: brightness(0) saturate(100%) invert(64%) sepia(39%) saturate(1871%) hue-rotate(116deg) brightness(96%) contrast(101%);
 }
 
 .tweet-actions .action-button.reposted .count {
@@ -497,9 +504,6 @@ button.tweet-button {
   flex-grow: 1;
   text-align: left;
   color: inherit;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 
 .follow li img {
