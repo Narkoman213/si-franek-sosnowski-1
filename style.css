@@ -486,6 +486,22 @@ button.tweet-button {
   background-color: rgba(128, 128, 128, 0.1);
 }
 
+.follow-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: left;
+  color: inherit;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
 .follow li img {
   flex-shrink: 0;
 }
@@ -513,7 +529,7 @@ button.tweet-button {
   text-overflow: ellipsis;
 }
 
-.follow li button {
+.follow-button {
   background-color: #eff3f4;
   color: #0f1419;
   border: none;
@@ -526,6 +542,6 @@ button.tweet-button {
   flex-shrink: 0;
 }
 
-.follow li button:hover {
+.follow-button:hover {
   background-color: #d7dbdc;
 }
