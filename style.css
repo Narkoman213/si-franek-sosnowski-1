@@ -313,9 +313,32 @@ button.tweet-button {
   font: inherit;
 }
 
-.tweet-actions .action-button:hover {
-  background-color: rgba(29, 155, 240, 0.1);
-}
+
+  .tweet-actions .action-button:hover img {
+    opacity: 1;  
+  }
+  
+  .tweet-actions .action-button#like-button:hover .count {
+    color: #f91880;
+  }
+  .tweet-actions .action-button#repost-button:hover .count {
+    color: #00ba7c;
+  }
+
+  .tweet-actions .action-button#like-button:hover img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(3456%) hue-rotate(326deg) brightness(100%) contrast(95%);
+  }
+  .tweet-actions .action-button#repost-button:hover img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(39%) saturate(1871%) hue-rotate(116deg) brightness(96%) contrast(101%);
+  }
+
+  .tweet-actions .action-button:not(#like-button):not(#repost-button):hover img {
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(749%) hue-rotate(173deg) brightness(97%) contrast(101%);
+  }
+
+  .tweet-actions .action-button:not(#like-button):not(#repost-button):hover .count {
+    color: #1da1f2;
+  }
 
 .tweet-actions img {
   width: 18px;
